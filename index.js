@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(username, password);
 
       if (username === "admin" && password === "password") {
-        alert("Login successful");
         localStorage.setItem("isLogin", true);
         window.location.href = "home.html";
+        alert("Login successful");
       } else {
         alert("Invalid password");
       }
