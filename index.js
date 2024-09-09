@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.getElementById("login-form");
   const hideLinks = document.querySelectorAll("#services, #booking, #logout");
   const loginLink = document.getElementById("login-link");
+  const bookingForm = document.getElementById("booking-form");
   console.log(hideLinks);
 
   const check = localStorage.getItem("isLogin");
@@ -25,6 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         alert("Invalid password");
       }
+    });
+  }
+
+  if (bookingForm) {
+    bookingForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      console.log(e.target);
+      window.location.href = "success.html";
     });
   }
 });

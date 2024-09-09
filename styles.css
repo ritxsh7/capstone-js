@@ -28,17 +28,18 @@ p{
 }
 
 .card {
-    background-color: #fff;
+    min-height: 300px;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 350px;
     overflow: hidden;
     text-align: center;
 }
 
 .card-image {
     width: 100%;
-    height: auto;
+    height: 200px;
 }
 
 .card-content {
@@ -46,6 +47,8 @@ p{
 }
 
 .card-title {
+    padding-top: 10px;
+    min-height: 4rem;
     font-size: 1.5em;
     margin: 0;
     color: #333;
@@ -57,15 +60,10 @@ p{
     margin: 8px 0;
 }
 
-.card-offer {
-    font-size: 1.2em;
-    color: #e74c3c;
-    margin: 8px 0;
-}
 
 .card-button {
-    background-color: #3498db;
-    color: #fff;
+    background-color: black;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -192,10 +190,74 @@ main {
 }
 
 .services{
+    padding: 0;
+    margin: 3rem auto;
+    justify-content: space-around;
+    width: 80%;
     display: flex;
     list-style: none;
 }
 
 #services, #booking, #logout{
     display: none;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #333;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-button{
+    background:black;
+    color: white;
+    width: 100%;
+    padding: 0.6rem 2rem;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.success-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
